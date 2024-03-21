@@ -10,7 +10,7 @@ class Chain(models.Model):
     """
     name = models.CharField(max_length=255)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    year = models.IntegerField()
+    year = models.CharField(max_length=30)
     sem = models.CharField(max_length=30)
     code = models.CharField(max_length=10)
     slot = models.CharField(max_length=10)
